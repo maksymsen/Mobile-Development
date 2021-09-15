@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab_2</string>
+    <string name="test_resource_error">--s</string>
 </resources>
