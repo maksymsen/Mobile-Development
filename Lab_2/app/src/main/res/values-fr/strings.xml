@@ -5,4 +5,5 @@
     <string name="welcome">Bienvenue!</string>
     <string name="GBC_logo_content_description">GBC logo</string>
     <string name="menu_about">About</string>
+    <string name="menu_second">Second Option</string>
 </resources>
