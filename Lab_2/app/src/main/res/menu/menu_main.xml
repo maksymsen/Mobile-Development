@@ -4,8 +4,11 @@
 
     <item
         android:id="@+id/menu_about"
-        android:title="@string/menu_about" />
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
     <item
         android:id="@+id/menu_second"
-        android:title="@string/menu_second" />
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/menu_second"
+        app:showAsAction="ifRoom" />
 </menu>
