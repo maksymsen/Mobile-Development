@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.menu_second:
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
