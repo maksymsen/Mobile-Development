@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_first" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView4"
+        android:id="@+id/fragContView2"
         android:name="ca.gbc.comp3074.lab_3.SecondFragment"
         android:layout_width="406dp"
         android:layout_height="395dp"
