@@ -1,12 +1,17 @@
 package ca.gbc.comp3074.lab_3;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,8 @@ public class SecondFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    public TextView label_msg;
+    public Button reset;
 
     public SecondFragment() {
         // Required empty public constructor
@@ -60,5 +67,21 @@ public class SecondFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        String msg = requireArguments().getString("message");
+        label_msg = view.findViewById(R.id.label_msg);
+        label_msg.setText(msg);
+        reset = view.findViewById(R.id.btn_reset);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view2) {
+                label_msg.setText("Hello second fragment");
+            }
+        });
     }
 }
