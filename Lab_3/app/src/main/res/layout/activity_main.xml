@@ -10,11 +10,24 @@
         android:id="@+id/fragContView1"
         android:name="ca.gbc.comp3074.lab_3.FirstFragment"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="335dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout="@layout/fragment_first" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView4"
+        android:name="ca.gbc.comp3074.lab_3.SecondFragment"
+        android:layout_width="406dp"
+        android:layout_height="395dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragContView1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_second" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
