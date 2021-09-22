@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/label_inputs"
+        android:id="@+id/id_label_inputs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
         android:text="@string/label_inputs"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_hoursWorked"
+        app:layout_constraintBottom_toTopOf="@+id/id_edit_hoursWorked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.863" />
 
     <EditText
-        android:id="@+id/edit_hoursWorked"
+        android:id="@+id/id_edit_hoursWorked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
@@ -32,14 +32,14 @@
         android:minHeight="48dp"
         android:textColorHint="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_hourlyRate"
+        app:layout_constraintBottom_toTopOf="@+id/id_edit_hourlyRate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/edit_hourlyRate"
+        android:id="@+id/id_edit_hourlyRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="364dp"
@@ -57,7 +57,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/output_totalPay"
+        android:id="@+id/id_output_totalPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
@@ -67,10 +67,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_hourlyRate" />
+        app:layout_constraintTop_toBottomOf="@+id/id_edit_hourlyRate" />
 
     <TextView
-        android:id="@+id/output_tax"
+        android:id="@+id/id_output_tax"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -79,6 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/output_totalPay"
+        app:layout_constraintTop_toBottomOf="@+id/id_output_totalPay"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
