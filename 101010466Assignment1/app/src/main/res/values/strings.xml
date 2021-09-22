@@ -2,6 +2,9 @@
     <string name="app_name">101010466-Assignment-1</string>
 
     <string name="label_inputs">Fill out the following fields:</string>
+    <string name="label_total_pay">Total Pay:</string>
+    <string name="label_tax">Tax: </string>
+
     <string name="edit_hours_worked">Hours worked</string>
     <string name="edit_hourly_rate">Hourly rate</string>
 
