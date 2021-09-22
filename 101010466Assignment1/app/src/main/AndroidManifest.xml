@@ -17,7 +17,7 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity"
             />
-        <!--        configuration for the back button in the menu-->
+        <!--        configuration for the back button in the menu -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
