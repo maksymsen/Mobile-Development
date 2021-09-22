@@ -2,4 +2,4 @@
 Lab work for Mobile Development
 
 
-lab_2 -> note the androidManifest.xml to remember how a "back" functionality should be configured in the manifest.
+lab_2 -> note the changes to the androidmanifest.xml in lab 2 for details on menu navigation by means of configuring the MainActivity as the parent activity.
