@@ -7,16 +7,19 @@
     tools:context=".FirstFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#D31515"
+        android:paddingTop="44dp"
+        android:text="Button" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00BCD4"
+        android:paddingTop="55dp"
         android:text="@string/hello_blank_fragment1" />
-
-    <Button
-        android:id="@+id/btn_change"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
 </FrameLayout>
