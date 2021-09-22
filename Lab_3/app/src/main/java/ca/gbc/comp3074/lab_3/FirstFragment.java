@@ -71,8 +71,10 @@ public class FirstFragment extends Fragment {
                             .replace(R.id.fragContView2,FirstFragment.class,null)
                             .commit();
                 } else {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("message", "here is some text");
                     getActivity().getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.fragContView2,SecondFragment.class,null)
+                            .replace(R.id.fragContView2, SecondFragment.class, bundle)
                             .commit();
                 }
                 first = !first;
