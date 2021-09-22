@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">101010466-Assignment-1</string>
+    <string name="label_hours_worked">Number of hours worked:</string>
+    <string name="label_hourly_rate">Hourly rate:</string>
+    <string name="edit_hours_worked">Hours worked</string>
+    <string name="edit_hourly_rate">Hourly rate</string>
 </resources>
