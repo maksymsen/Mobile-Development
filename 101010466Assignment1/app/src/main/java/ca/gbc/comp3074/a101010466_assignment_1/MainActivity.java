@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public double calculateTotalPay(double numHours, double hourlyRate) {
-        if (numHours >= 40) {
+        if (numHours > 40) {
             return (numHours - 40) * hourlyRate * 1.5 + 40 * hourlyRate;
         } else return numHours * hourlyRate;
     }
