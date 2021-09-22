@@ -13,4 +13,6 @@
 
     <string name="about_student_name">Maksym Sen</string>
     <string name="about_student_id">101010466</string>
+
+    <string name="menu_aboutMe">About Me</string>
 </resources>
