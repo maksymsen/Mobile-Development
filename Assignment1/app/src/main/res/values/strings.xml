@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">101010466-Assignment-1</string>
+
+    <string name="label_inputs">Fill out the following fields:</string>
+    <string name="label_total_pay">Total Pay:</string>
+    <string name="label_tax">Tax: </string>
+
+    <string name="edit_hours_worked">Hours worked</string>
+    <string name="edit_hourly_rate">Hourly rate</string>
+
+    <string name="hint_hours_worked">Hours worked:</string>
+    <string name="hint_hourly_rate">Hourly rate:</string>
+
+    <string name="output_total_pay">The total will be displayed here.</string>
+    <string name="output_tax">The tax will be displayed here.</string>
+
+    <string name="about_student_name">Maksym Sen</string>
+    <string name="about_student_id">101010466</string>
+
+    <string name="menu_aboutMe">About Me</string>
+    <string name="button_name">Calculate</string>
+</resources>
