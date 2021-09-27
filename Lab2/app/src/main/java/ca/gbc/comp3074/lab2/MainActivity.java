@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         // This may be redundant as the default value for this label should be "0", but just in case, we set it to "0" onCreate anyway.
         output.setText("0");
 
-        add = findViewById(R.id.btnMinus);
+        add = findViewById(R.id.btnAdd);
         minus = findViewById(R.id.btnMinus);
         step = findViewById(R.id.btnStep);
         reset = findViewById(R.id.btnReset);
@@ -34,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                output.setText(addToOutput(Integer.parseInt(output.getText().toString()), stepValue));
+                int outputValue = Integer.parseInt(output.getText().toString());
+                int newOutputValue = addToOutput(outputValue, stepValue);
+
+                output.setText(String.valueOf(newOutputValue).toString());
             }
         });
     }
