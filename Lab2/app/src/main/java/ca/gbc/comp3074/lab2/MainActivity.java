@@ -41,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int outputValue = Integer.parseInt(output.getText().toString());
+                int newOutputValue = subtractFromOutput(outputValue, stepValue);
+
+                output.setText(String.valueOf(newOutputValue).toString());
+            }
+        });
+
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,5 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
     public int addToOutput(int value, int step) {
         return value + step;
+    }
+
+    public int subtractFromOutput(int value, int step) {
+        return value - step;
     }
 }
