@@ -40,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 output.setText(String.valueOf(newOutputValue).toString());
             }
         });
+
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                output.setText("0");
+                stepValue = 1;
+            }
+        });
     }
 
     public int addToOutput(int value, int step) {
