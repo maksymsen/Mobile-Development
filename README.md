@@ -20,5 +20,5 @@
 
 ## Assignments
 
-### 101010466Assignment1
+### Assignment1
 * User inputs an hourly rate and the amount of hours worked, there's a calculate button that evaluates the tax & total pay. There's a second activity that displays an aboutme section.
