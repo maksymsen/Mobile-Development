@@ -48,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 stepValue = 1;
             }
         });
+
+        step.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                stepValue = 2;
+            }
+        });
     }
 
     public int addToOutput(int value, int step) {
