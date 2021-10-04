@@ -7,6 +7,9 @@
 ### Lab2
 * Labex2 repo - creating an application that adds/subtracts from a value that starts at 0. Application has a step button that changes the add/subtract value to two, and a reset button that sets the output back to 0 and resets the step value to 1.
 
+### Lab3
+* Labex3 repo - Using a navigation-type fragment to flip between three other fragments, each with their own background and text.
+
 ## In-class Labs
 
 ### Lab_1
