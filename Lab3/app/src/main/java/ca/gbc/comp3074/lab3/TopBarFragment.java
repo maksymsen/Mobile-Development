@@ -70,17 +70,20 @@ public class TopBarFragment extends Fragment {
         left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // click left and get to frag 1
-                // left button now needs to be disabled
+                // Check if right is enabled, if it is, then we're on fragment 2 and can only head to the first fragment
                 if (right.isEnabled()) {
                     requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, FirstFragment.class, null)
                         .commit();
+                    // left button now needs to be disabled
                     left.setEnabled(false);
-                } else {
+                }
+                // If right isn't enabled, that means we're on fragment 3 and now need to go to fragment 2
+                else {
                     requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, SecondFragment.class, null)
                         .commit();
+                    // right now needs to be enabled
                     right.setEnabled(true);
                 }
             }
