@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.util.Objects;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link TopBarFragment#newInstance} factory method to
@@ -71,12 +73,12 @@ public class TopBarFragment extends Fragment {
                 // click left and get to frag 1
                 // left button now needs to be disabled
                 if (right.isEnabled()) {
-                    getActivity().getSupportFragmentManager().beginTransaction()
+                    requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, FirstFragment.class, null)
                         .commit();
                     left.setEnabled(false);
                 } else {
-                    getActivity().getSupportFragmentManager().beginTransaction()
+                    requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, SecondFragment.class, null)
                         .commit();
                     right.setEnabled(true);
@@ -88,12 +90,12 @@ public class TopBarFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (left.isEnabled()) {
-                    getActivity().getSupportFragmentManager().beginTransaction()
+                    requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, ThirdFragment.class, null)
                         .commit();
                     right.setEnabled(false);
                 } else {
-                    getActivity().getSupportFragmentManager().beginTransaction()
+                    requireActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragmentScreen, SecondFragment.class, null)
                         .commit();
                     left.setEnabled(true);
