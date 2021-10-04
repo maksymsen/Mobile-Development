@@ -3,4 +3,6 @@
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
 </resources>
