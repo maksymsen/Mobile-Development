@@ -10,6 +10,9 @@
 ### Lab3
 * Labex3 repo - Using a navigation-type fragment to flip between three other fragments, each with their own background and text.
 
+### Lab4
+* Labex4 repo - Saving a value to Shared Preferences for caching.
+
 ## In-class Labs
 
 ### Lab_1
