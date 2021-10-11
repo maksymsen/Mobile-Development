@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="user_greeting">Greetings, user!</string>
 </resources>
